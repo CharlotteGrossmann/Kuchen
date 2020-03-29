@@ -10,6 +10,14 @@ h1{
   font-size: 3em;
 }
 
+h2{
+  color:rgb(250,218,192);
+  text-align: center;
+  font-family: 'Satisfy', cursive;
+  display:none;
+  font-size: large;
+}
+
 .cake{
   width:50vw;
   height:auto;
@@ -31,6 +39,9 @@ h1{
   cursor: none;
 }
 
+#counter{
+  text-decoration: underline double;
+}
 
 
 
