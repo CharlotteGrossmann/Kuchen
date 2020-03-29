@@ -1,0 +1,36 @@
+
+body {
+  background: #000000;
+}
+
+h1{
+  color:rgb(250, 218, 192);
+  text-align: center;
+  font-family: 'Satisfy', cursive;
+  font-size: 3em;
+}
+
+.cake{
+  width:50vw;
+  height:auto;
+  margin: auto;
+  margin-top:10vh;
+  
+}
+
+#cur{
+  cursor: url('./fork.png'),auto;
+}
+#cur1{
+  cursor: url('./hand.png'),auto;
+}
+#cur2{
+  cursor: url('./lick.png'),auto;
+}
+#cur3{
+  cursor: none;
+}
+
+
+
+
