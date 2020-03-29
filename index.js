@@ -27,7 +27,13 @@ cake.addEventListener("click", function(){
             }
             if(i==8){
                 cur.id="cur";      
-                localStorage.piece = Number(localStorage.piece)+1;
+                if (typeof(Storage) !== "undefined") {
+                    if (localStorage.piece) {
+                      localStorage.piece = Number(localStorage.piece)+1;
+                    } else {
+                      localStorage.piece = 1;
+                    }
+                }
                 counter.innerHTML=localStorage.piece;
                 localStorage.style= "inherit";
                 guilt.style.display = localStorage.style;
