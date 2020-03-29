@@ -5,7 +5,11 @@ var pic = ["cake.svg","cake1.svg","cake2.svg","cake3.svg","cake4.svg","cake5.svg
 var counter = document.getElementById("counter");
 var guilt = document.getElementById("h2");
 
-
+if(Number(localStorage.piece)>1){
+        counter.innerHTML=localStorage.piece;
+        localStorage.style= "inherit";
+        guilt.style.display = localStorage.style;   
+}
 cake.addEventListener("click", function(){
     if(Number(localStorage.piece)>1){
         counter.innerHTML=localStorage.piece;
