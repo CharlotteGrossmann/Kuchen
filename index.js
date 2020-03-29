@@ -8,8 +8,9 @@ var guilt = document.getElementById("h2");
 
 cake.addEventListener("click", function(){
     if(Number(localStorage.piece)>1){
+        counter.innerHTML=localStorage.piece;
         localStorage.style= "inherit";
-        guilt.style.display = localStorage.style;
+        guilt.style.display = localStorage.style;   
     }
     for(var i = 0; i < pic.length; i++){
         if(cake.src.match(pic[i])){
