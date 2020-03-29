@@ -6,15 +6,15 @@ var counter = document.getElementById("counter");
 var guilt = document.getElementById("h2");
 
 if(Number(localStorage.piece)>1){
-        counter.innerHTML=localStorage.piece;
-        localStorage.style= "inherit";
-        guilt.style.display = localStorage.style;   
+    localStorage.style= "inherit";
+    guilt.style.display = localStorage.style;
+    counter.innerHTML=localStorage.piece;
 }
 cake.addEventListener("click", function(){
     if(Number(localStorage.piece)>1){
-        counter.innerHTML=localStorage.piece;
         localStorage.style= "inherit";
-        guilt.style.display = localStorage.style;   
+        guilt.style.display = localStorage.style;
+        counter.innerHTML=localStorage.piece;
     }
     for(var i = 0; i < pic.length; i++){
         if(cake.src.match(pic[i])){
@@ -35,7 +35,7 @@ cake.addEventListener("click", function(){
                     if (localStorage.piece) {
                       localStorage.piece = Number(localStorage.piece)+1;
                     } else {
-                      localStorage.piece = 1;
+                      localStorage.piece = 2;
                     }
                 }
                 counter.innerHTML=localStorage.piece;
