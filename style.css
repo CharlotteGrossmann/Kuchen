@@ -1,13 +1,22 @@
-
-body {
-  background: #000000;
+html, body {
+  margin: 0; 
+  height: 100%; 
+  overflow-y: hidden; 
+  background:black;
+  touch-action:manipulation;
 }
-
+@media screen and (max-width:800px){
+  h1{
+    color:green;
+  }
+}
 h1{
   color:rgb(250, 218, 192);
   text-align: center;
   font-family: 'Satisfy', cursive;
-  font-size: 3em;
+  font-size:  3em;
+  margin-top: 0px;
+
 }
 
 h2{
@@ -15,15 +24,36 @@ h2{
   text-align: center;
   font-family: 'Satisfy', cursive;
   display:none;
-  font-size: large;
+  font-size: 2em;
+  margin-bottom: 0px;
+  margin-top:1em;
 }
 
-.cake{
-  width:50vw;
-  height:auto;
-  margin: auto;
-  margin-top:10vh;
-  
+span{
+  font-size: x-large;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  margin-top: -300px;
+  /* half of #content height*/
+  left: 0;
+  width: 100%;
+}
+
+section{
+  width: 624px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 395px;
+}
+
+#cake{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
 }
 
 #cur{
