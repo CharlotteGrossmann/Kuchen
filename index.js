@@ -18,6 +18,15 @@ cake.addEventListener("click", function(){
     }
     for(var i = 0; i < pic.length; i++){
         if(cake.src.match(pic[i])){
+            if(i==1){
+                if (typeof(Storage) !== "undefined") {
+                    if (localStorage.piece) {
+                      localStorage.piece = Number(localStorage.piece)+1;
+                    } else {
+                      localStorage.piece = 2;
+                    }
+                }
+            }
             if(i==4){
                 cur.id="cur1";
                 
@@ -31,13 +40,7 @@ cake.addEventListener("click", function(){
             }
             if(i==8){
                 cur.id="cur";      
-                if (typeof(Storage) !== "undefined") {
-                    if (localStorage.piece) {
-                      localStorage.piece = Number(localStorage.piece)+1;
-                    } else {
-                      localStorage.piece = 2;
-                    }
-                }
+               
                 counter.innerHTML=localStorage.piece;
                 localStorage.style= "inherit";
                 guilt.style.display = localStorage.style;
