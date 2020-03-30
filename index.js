@@ -13,7 +13,7 @@ if(Number(localStorage.piece)>1){
 cake.addEventListener("click", function(){
     for(var i = 0; i < pic.length; i++){
         if(cake.src.match(pic[i])){
-            if(i==1){
+            if(i==0){
                 if (typeof(Storage) !== "undefined") {
                     if (localStorage.piece) {
                       localStorage.piece = Number(localStorage.piece)+1;
